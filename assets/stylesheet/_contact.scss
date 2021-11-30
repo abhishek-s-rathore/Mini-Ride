@@ -1,0 +1,53 @@
+#contact {
+    .contact-hero {
+        background: url(../imgs/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg) center no-repeat;
+        background-size: cover;
+        padding: 25rem 0;
+        color: white;
+        h2{
+            font-size: 3.5rem;
+            span{
+                color: $btn-bg-color;
+            }
+        }
+    }
+    .contact-sec{
+        p{
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+        }
+        .map-sec{
+            margin-top: 5rem;
+        }
+        iframe{
+            height:100%
+        }
+        label{
+            margin-left: 0.5rem;
+        }
+        input{
+            border: 1px solid black;
+        }
+        .control-form{
+            display: block;
+            width: 100%;
+            padding:1rem 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0.45rem;
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            outline: none;
+        }
+        .btn{
+            background-color: $btn-bg-color;
+            border-radius: 1.5rem;
+            padding: 1rem 3rem;
+            transition: all 0.5s ease-in-out;
+            color: white;
+            &:hover{
+                background-color: black;
+            }
+        }
+
+    }
+}

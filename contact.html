@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mini Ride | Contact</title>
+        <script src="https://kit.fontawesome.com/379acff5c7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./assets/stylesheet/style.css">
+    </head>
+    <body>
+        <header class="absolute width-100 fixed">
+            <div class="container flex justify-flex-between  align-flex-center">
+                <a href="./index.html" class="logo">
+                    <h2 class="secondary-heading">MINI RIDE  <i class="fas fa-motorcycle"></i></h2>
+                </a>
+                <label for="toggle-bar" class="toggle-lable">
+                    <i class="fas fa-bars bar" ></i>
+                    <i class="fas fa-times cross display-none"></i>
+                </label>
+                <input type="checkbox" id="toggle-bar" class="toggle-input">
+                <nav>
+                    <ul class="nav flex">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./hire.html">Hire</a></li>
+                        <li><a href="./faq.html">FAQs</a></li>
+                        <li><a class="active" href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="contact">
+            <div class="grid-container grid template-column ">
+                <section class="contact-hero span-4 grid align-grid-center">
+                    <div class="container flex justify-flex-center align-flex-center">
+                        <h2 class="secondary-heading"><span>Contact</span> Us!</h2>
+                    </div>
+                </section>
+                <section class="padding contact-sec span-4">
+                    <div class="container ">
+                        <h2 class="secondary-heading text-center">Contact Us!</h2>
+                        <p class="text-center">Any Bike Renting Issue? Feel Free to Contact us.</p>
+                        <div class="grid template-column-2 align-flex-center gap map-sec">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.92627099055!2d76.3526729!3d32.2062173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1612269717041!5m2!1sen!2sin" width="100%"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <form>
+                                <fieldset>
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" placeholder="Enter Full Name" class="control-form" required>
+                                    <label for="number">Mobile Number:</label>
+                                    <input type="number" class="control-form" id="number" placeholder="Enter Mobile Number" required>
+                                    <label for="email">Gmail</label>
+                                    <input type="email" class="control-form" id="email" placeholder="Enter Email" required>
+                                    <label for="message">Message</label>
+                                    <textarea name="" id="message" cols="" rows="10" placeholder="Write message " class="control-form" required></textarea>
+                                    <a href="" class="btn">Submit</a>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="padding">
+            <div class="container grid template-column gap">
+                <nav>
+                    <h3 class="ternary-heading">Site Links</h3>
+                    <ul class="#">
+                        <li><a href="./index.html"><i class="fas fa-chevron-right"></i>Home</a></li>
+                        <li><a href="./about.html"><i class="fas fa-chevron-right"></i>About Us</a></li>
+                        <li><a href="./hire.html"><i class="fas fa-chevron-right"></i>Hire</a></li>
+                        <li><a href="./faq.html"><i class="fas fa-chevron-right"></i>FAQs</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Reach Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-location-arrow"></i>#123 Dharamshala H.P.</a></li>
+                        <li><span><i class="fas fa-phone"></i>+91 9389732668</span></li>
+                        <li><a href="mailto:abhishek.990914@gmail.com"><i class="far fa-envelope"></i>abhi.990914@gmail.com</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./faq.html"><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+                <nav class="follow-us">
+                    <h3 class="ternary-heading">Follow Us</h3>
+                    <ul class="flex">
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class='footer-bottom'> <small>All rights reserved | © 2021 Mini Ride</small></div>
+        </footer>
+        <script src="./assets/scripts/faq.js"></script>
+        <script src="./assets/scripts/index.js"></script>
+    </body>
+</html>

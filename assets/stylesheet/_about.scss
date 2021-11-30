@@ -1,0 +1,76 @@
+
+#about{
+
+    .about-hero{
+        padding: 20rem 0;
+        background:linear-gradient(rgba(black,0.5) , rgba(black,0.2)) ,url("../imgs/harley-davidson-02tt7EvQKhw-unsplash.jpg") center no-repeat;
+        background-size: cover;
+        h2{
+            color: white;
+            font-size: 2.5rem;
+        }
+    }
+    
+    .doIt-sec{
+        .container{
+            background-color: $service-bg-color;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border-radius: 2rem;
+        }
+    }
+    section:nth-child(3){
+        background: lightblue;
+        article{
+            .hr-line{
+                margin: 1rem 0;
+            }
+        }
+        .font-0{
+            background: url("../imgs/bikes.jpg") center no-repeat;
+            background-size: cover;
+            height: 500px;
+            border-radius: 2rem;
+        }
+    }
+    section:nth-child(4){
+        article{
+            .img-box{
+                background: url("../imgs/avengerabout.jpg") center no-repeat;
+                background-size: cover;
+                border-radius: 2rem;
+            }
+            h2{
+                margin: 1rem 0;
+            }
+            h4{
+                color: black;
+                font-weight: 600;
+                margin: 1rem;
+                font-size: 1.2rem;
+                
+            }
+        }
+    }
+    .btn{
+        border: 2px solid $btn-bg-color;
+        background: linear-gradient(to right, $btn-bg-color 50%, #fff 50%);
+        background-size: 210% 100%;
+        background-position: bottom left;
+        border-radius: 2rem;
+        margin-top: 1rem;
+        padding: 1rem 3rem;
+        transition: all .7s ease-out;
+        &:hover{
+            border: 2px solid limegreen;
+            background-position: bottom right;
+            color:black;
+            
+
+        }
+    }
+    .hr-line{
+        height: 1px ;
+        background: gray;
+    }
+}

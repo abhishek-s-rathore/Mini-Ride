@@ -1,0 +1,141 @@
+@import './variable';
+@import './reset';
+@import './general';
+@import './flex';
+@import './grid';
+@import './header';
+@import './home';
+@import './about';
+@import './hire';
+@import './faq';
+@import './contact';
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 768px;
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .template-column,
+  .template-column-2,
+  .template-column-3 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 5rem;
+  }
+  .width-30 {
+    width: 50%;
+  }
+  .span-4,
+  .span-2 {
+    grid-column: span 1;
+  }
+  .fixed {
+    position: fixed;
+  }
+  header {
+    z-index: 9999;
+    nav {
+      display: none;
+    }
+    .toggle-lable {
+      display: block;
+      font-size: 2.5rem;
+      z-index: 1000;
+      right: 1rem;
+      color: white;
+    }
+    .logo {
+      z-index: 1000;
+    }
+    .toggle-input:checked ~ nav {
+      display: flex;
+    }
+    nav {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      color: white;
+      background-color: rgba(blue, 0.8);
+      .nav {
+        flex-direction: column;
+        position: fixed;
+        text-align: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 10rem;
+        li {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+  .img-div {
+    height: 50rem;
+  }
+
+  footer {
+    nav {
+      margin-top: 2rem;
+    }
+  }
+  .overlay {
+    padding-top: 10rem;
+  }
+  #hire {
+    .overlay {
+      .close {
+        top: 0.5rem;
+        right: 1.5rem;
+        font-size: 3rem;
+        color: black;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 500px;
+    width: 100%;
+  }
+  .width-30 {
+    width: 80%;
+  }
+  #hire {
+    .search-box {
+      margin-bottom: 2rem;
+    }
+    .bikes-section {
+      article {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .overlay {
+      .close {
+        top: 0.5rem;
+        right: 1.5rem;
+      }
+    }
+  }
+  .about-sec {
+    .about-content {
+      .btn {
+        padding: 1rem 0.6rem;
+      }
+    }
+  }
+}
